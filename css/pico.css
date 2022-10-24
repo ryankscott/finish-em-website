@@ -17,7 +17,7 @@
   --border-width: 1px;
   --outline-width: 3px;
   --spacing: 1rem;
-  --typography-spacing-vertical: 1.0rem;
+  --typography-spacing-vertical: 1rem;
   --block-spacing-vertical: calc(var(--spacing) * 2);
   --block-spacing-horizontal: var(--spacing);
   --grid-spacing-vertical: 0;
@@ -975,7 +975,7 @@ input[type="reset"],
   box-shadow: var(--box-shadow);
   color: var(--color);
   font-weight: var(--font-weight);
-  font-size: 0.75rem;
+  font-size: 1rem;
   line-height: var(--line-height);
   text-align: center;
   cursor: pointer;
@@ -991,6 +991,7 @@ input[type="reset"]:is([aria-current], :hover, :active, :focus),
   --border-color: var(--primary-hover);
   --box-shadow: var(--button-hover-box-shadow, 0 0 0 rgba(0, 0, 0, 0));
   --color: var(--primary-inverse);
+  font-size: 1rem;
 }
 button:focus,
 input[type="submit"]:focus,
@@ -2166,6 +2167,7 @@ nav [role="button"] {
   margin-right: inherit;
   margin-left: inherit;
   padding: var(--button-spacing-vertical) var(--button-spacing-horizontal);
+  font-size: 0.75rem;
 }
 
 aside nav,
@@ -2776,9 +2778,9 @@ textarea,
   border-radius: var(--border-radius);
   align-items: center;
   text-align: center;
-  margin-bottom: calc(var(--spacing) * 2); 
-  margin-left: var(--spacing); 
-  margin-right: var(--spacing); 
+  margin-bottom: calc(var(--spacing) * 2);
+  margin-left: var(--spacing);
+  margin-right: var(--spacing);
 }
 
 .feature_wide h5,
@@ -2821,6 +2823,17 @@ textarea,
 
 .footer p {
   font-size: 14px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .title a {
+  max-width: 200px;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=pico.css.map */
