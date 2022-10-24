@@ -17,7 +17,7 @@
   --border-width: 1px;
   --outline-width: 3px;
   --spacing: 1rem;
-  --typography-spacing-vertical: 1.5rem;
+  --typography-spacing-vertical: 1.0rem;
   --block-spacing-vertical: calc(var(--spacing) * 2);
   --block-spacing-horizontal: var(--spacing);
   --grid-spacing-vertical: 0;
@@ -149,7 +149,7 @@ h6 {
 
 h1 {
   --font-size: 2.75rem;
-  --typography-spacing-vertical: 3rem;
+  --typography-spacing-vertical: 2.75rem;
 }
 
 h2 {
@@ -2776,15 +2776,15 @@ textarea,
   border-radius: var(--border-radius);
   align-items: center;
   text-align: center;
-  margin-bottom: 1rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin-bottom: calc(var(--spacing) * 2); 
+  margin-left: var(--spacing); 
+  margin-right: var(--spacing); 
 }
 
 .feature_wide h5,
 .feature h5 {
   margin-top: 1rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.2rem;
 }
 
 .feature img {
@@ -2799,11 +2799,13 @@ textarea,
   display: flex;
   flex-direction: row;
   align-items: baseline;
+  margin-top: calc(var(--spacing) * 0.5);
 }
 
 .feature_title_emoji {
   font-size: 24px;
   margin-right: 10px;
+  margin-bottom: calc(var(--spacing) * 0.5);
 }
 
 .footer {
